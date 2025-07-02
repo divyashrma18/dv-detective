@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Spectral&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.hero {
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+justify-content: start;
+align-items: center;
+  color: #f5e8c7;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5rem;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 3.7rem;
+  width: 760px;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 230, 180, 0.3);
+}
+
+.hero-content p {
+  font-family: 'Spectral', serif;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 2rem;
+  font-family: 'Spectral', serif;
+  background-color: #f5e8c7;
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d4c6a2;
+}
+.magnifier {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #f5e8c7;
+  box-shadow: 0 0 12px rgba(255, 240, 200, 0.4);
+  pointer-events: none;
+  z-index: 999;
+}
+
+.magnifier-inner {
+  width: 100vw;
+  height: 100vh;
+  transform-origin: top left;
+}
+
+.magnified-scene {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #f5e8c7;
+}
+.scene {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-image: url('/images/hero.png');
+  background-size: cover;
+  background-position: center;
+}
