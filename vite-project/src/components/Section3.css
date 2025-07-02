@@ -81,7 +81,7 @@
   overflow: hidden;
 }
 
-/* Light beam cone */
+
 .light-beam {
   position: absolute;
   top: 0;
@@ -95,7 +95,7 @@
   overflow: hidden;
 }
 
-/* Dust particles */
+
 .dust {
   position: absolute;
   width: 4px;
@@ -106,6 +106,7 @@
   filter: blur(1px);
   opacity: 0.6;
 }
+
 
 /* Random positioning and animation delay */
 .dust:nth-child(1)  { top: 10%; left: 20%; animation-delay: 0s; }

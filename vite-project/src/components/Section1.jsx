@@ -35,7 +35,7 @@ const Section1 = () => {
     tl.to('.clue-text', {
       opacity: 1,
       onStart: () => {
-        document.querySelector('.light-beam')?.classList.add('visible');
+        document.querySelector('.light-beam1')?.classList.add('visible');
       },
     });
   }, []);
@@ -51,7 +51,7 @@ const Section1 = () => {
       {/* Light beam and particles */}
       <div className="light-beam1">
         {Array.from({ length: 20 }).map((_, i) => (
-          <span key={i} className="dust1u" />
+          <span key={i} className="dust1" />
         ))}
       </div>
 

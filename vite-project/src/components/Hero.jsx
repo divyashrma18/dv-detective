@@ -7,15 +7,15 @@ const Hero = () => {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const heroRef = useRef(null);
 
-  const handleMouseMove = (e) => {
+const handleMouseMove = (e) => {
     const rect = heroRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     setCursor({ x, y });
   };
-
   return (
-    <div className="hero" ref={heroRef} onMouseMove={handleMouseMove}>
+    <div className="hero" ref={heroRef} onMouseMove={handleMouseMove}
+  >
       <Navbar />
       <HeroContent />
 

@@ -1,0 +1,18 @@
+.magnifier-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.magnifier {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  pointer-events: none;
+  display: none;
+  z-index: 5;
+  box-shadow: 0 0 10px #fff2, 0 0 30px #0006;
+}
