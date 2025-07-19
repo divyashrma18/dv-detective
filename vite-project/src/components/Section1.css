@@ -1,7 +1,6 @@
 .section1 {
   position: relative;
   height: 100vh;
-  /* width: 1440px; */
   background-image: url('/images/section1.png');
   background-size: cover;
   background-position: center;
@@ -70,10 +69,7 @@
 .torch.right#torch-2 { top: 27%; right: 14%; }
 .torch.left#torch-3 { top: 40%; left: 33%; }
 .torch.right#torch-4 { top: 41%; right: 27%; }
-/* .torch.left#torch-5 { top: 40%; left: 10%; }
-.torch.right#torch-6 { top: 40%; right: 10%; }
-.torch.left#torch-7 { top: 70%; left: 10%; }
-.torch.right#torch-8 { top: 70%; right: 10%; } */
+
 
 .clue-text {
   position: absolute;

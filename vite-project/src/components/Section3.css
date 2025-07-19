@@ -51,7 +51,6 @@
   transition: opacity 1s ease;
 }
 
-/* When scroll triggers "reveal" */
 .section3.reveal .door-overlay.left {
   transform: translateX(-100%);
 }
@@ -108,13 +107,11 @@
 }
 
 
-/* Random positioning and animation delay */
 .dust:nth-child(1)  { top: 10%; left: 20%; animation-delay: 0s; }
 .dust:nth-child(2)  { top: 20%; left: 50%; animation-delay: 1s; }
 .dust:nth-child(3)  { top: 30%; left: 70%; animation-delay: 2s; }
 .dust:nth-child(4)  { top: 40%; left: 10%; animation-delay: 1.5s; }
 .dust:nth-child(5)  { top: 50%; left: 60%; animation-delay: 0.7s; }
-/* ... duplicate and vary these for 15–20 total */
 
 @keyframes floatDust {
   0% {

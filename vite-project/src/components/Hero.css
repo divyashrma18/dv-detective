@@ -21,7 +21,7 @@ align-items: center;
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 

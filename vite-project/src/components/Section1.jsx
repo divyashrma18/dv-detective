@@ -42,20 +42,17 @@ const Section1 = () => {
 
   return (
     <div className="section1">
-      {/* Torches */}
       <div className="torch left" id="torch-1" />
       <div className="torch right" id="torch-2" />
       <div className="torch left" id="torch-3" />
       <div className="torch right" id="torch-4" />
 
-      {/* Light beam and particles */}
       <div className="light-beam1">
         {Array.from({ length: 20 }).map((_, i) => (
           <span key={i} className="dust1" />
         ))}
       </div>
 
-      {/* Clue */}
       <div className="clue-text">
         “The flame reveals the forgotten truth.”
       </div>

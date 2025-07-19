@@ -27,8 +27,7 @@ const MagnifierSection = ({ children }) => {
   const hideMagnifier = () => setStyle({ display: 'none' });
 
   const getSnapshot = (el) => {
-    // Takes a snapshot using HTML2Canvas or a static background. Simplified:
-    return ''; // or fallback image of the section
+    return ''; 
   };
 
   return (

@@ -14,7 +14,7 @@
 .section2 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55); /* Adjust darkness here */
+  background: rgba(0, 0, 0, 0.55); 
   display: flex;
   justify-content: center;
   align-items: center;

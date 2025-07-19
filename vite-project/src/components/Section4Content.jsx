@@ -11,7 +11,6 @@ const Section4Content = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // TEXT: slide from left with fade
       gsap.from(textRef.current, {
         x: -100,
         autoAlpha: 0,
@@ -24,7 +23,6 @@ const Section4Content = () => {
         },
       });
 
-      // IMAGE: slide from right with fade
       gsap.from(imageRef.current, {
         x: 100,
         autoAlpha: 0,
@@ -38,7 +36,7 @@ const Section4Content = () => {
       });
     });
 
-    return () => ctx.revert(); // cleanup on unmount
+    return () => ctx.revert(); 
   }, []);
 
   return (

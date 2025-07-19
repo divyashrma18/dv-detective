@@ -48,7 +48,6 @@ const Section3 = () => {
           if (i > baseText.length) {
             clearInterval(typeBase);
 
-            // Type "CLOSED"
             let j = 0;
             const typeClosed = setInterval(() => {
               clue.textContent = baseText + ending.slice(0, j);
@@ -56,7 +55,6 @@ const Section3 = () => {
               if (j > ending.length) {
                 clearInterval(typeClosed);
 
-                // Backspace only "CLOSED"
                 setTimeout(() => {
                   let k = ending.length;
                   const eraseClosed = setInterval(() => {
@@ -65,7 +63,6 @@ const Section3 = () => {
                     if (k === 0) {
                       clearInterval(eraseClosed);
 
-                      // Type "REOPENS SOON!"
                       setTimeout(() => {
                         let m = 0;
                         const typeReopen = setInterval(() => {
